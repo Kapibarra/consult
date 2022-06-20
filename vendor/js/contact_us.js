@@ -90,7 +90,7 @@ $(".contact_btn").on('click', function () {
                 icon: 'error',
                 type: 'error',
                 title: 'Oops...',
-                html: '<div class="text-danger">Please provide the missing fields.</div>'
+                html: '<div class="text-danger">Заполните недостающие поля.</div>'
             })
             $(".contact_btn i").addClass('d-none');
         }

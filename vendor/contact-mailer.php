@@ -275,7 +275,7 @@ if($_POST)
 	$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
 	$mail->Port = 465; // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
-	$mail->setFrom($mail->Username, 'SMTPstroyadvice'); // Your email
+	$mail->setFrom($mail->Username, 'SMTPrabota'); // Your email
 	$mail->addAddress($your_email, $your_email); // Add a recipient на какой емейл отправить!! проверить!!!!                               // TCP port to connect to
     $mail->addReplyTo($your_email, 'Information');
 
@@ -283,7 +283,7 @@ if($_POST)
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Новая заявка с сайта.';
-    $mail->Body  = "<h4 style='text-align: center;padding: 25px 15px;background-color: #0c6c9e;color: #FFFFFF;font-size:16px;width:90%;border-radius: 10px;'>Привет! У вас новая заявка с сайта stroyadvice.ru.</h4><br><br>";
+    $mail->Body  = "<h4 style='text-align: center;padding: 25px 15px;background-color: #0c6c9e;color: #FFFFFF;font-size:16px;width:90%;border-radius: 10px;'>Привет! У вас новая заявка с сайта rabota-legko.ru.</h4><br><br>";
 
     if(isset($_POST["userEmail"])) {
         $mail->Body .= "<strong>Email: </strong>" . $user_Email . "<br>";
